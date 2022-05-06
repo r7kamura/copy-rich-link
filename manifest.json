@@ -1,0 +1,6 @@
+{
+  "name": "Copy Rich Link",
+  "description": "Copy the page title and URL as rich text.",
+  "version": "0.1.0",
+  "manifest_version": 3
+}
