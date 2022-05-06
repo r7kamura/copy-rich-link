@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "prettier --write ."
   },
-  "dependencies": {
+  "devDependencies": {
     "prettier": "^2.6.2",
     "typescript": "^4.5.4",
     "vite": "^2.9.7"
