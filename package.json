@@ -3,5 +3,10 @@
   "engines": {
     "node": "18"
   },
-  "scripts": {}
+  "scripts": {
+    "lint": "prettier --write ."
+  },
+  "dependencies": {
+    "prettier": "^2.6.2"
+  }
 }
