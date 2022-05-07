@@ -4,6 +4,10 @@ Browser extension to copy the page title and URL as rich text.
 
 Useful for pasting links to Slack, Google Docs, etc.
 
+![](images/screenshot-copied.png)
+
+![](images/screenshot-pasted.png)
+
 ## Usage
 
 Click the extension icon or execute the keyboard shortcut to copy the link to the page as rich text.
