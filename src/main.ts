@@ -1,8 +1,22 @@
 import "./style.css";
 
-const app = document.querySelector<HTMLDivElement>("#app")!;
-
-app.innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`;
+chrome.tabs.query(
+  {
+    active: true,
+    currentWindow: true,
+  },
+  (tabs) => {
+    const { title, url } = tabs[0];
+    const app = document.querySelector<HTMLDivElement>("#app")!;
+    const html = `<a href="${url}">${title}</a>`;
+    app.innerHTML = `
+      Copied ${html}
+    `;
+    navigator.clipboard.write([
+      new ClipboardItem({
+        "text/plain": new Blob([title || ""], { type: "text/plain" }),
+        "text/html": new Blob([html], { type: "text/html" }),
+      }),
+    ]);
+  }
+);
