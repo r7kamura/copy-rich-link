@@ -1,0 +1,17 @@
+Copy the page title and URL as rich text.
+
+Useful for pasting links to Slack, Google Docs, etc.
+
+## Usage
+
+Click the extension icon or execute the keyboard shortcut to copy the link to the page as rich text.
+
+## Keyboard shortcut
+
+The default keyboard shortcut is Ctrl + Shift + L, and Command + Shift + L on Mac.
+This can be changed from the browser's extension settings.
+
+## Plain text fallback
+
+As a fallback, we also copy in plain text format in the form `"{title}" {url}`,
+so that if you paste where rich text is not available or paste explicitly as plain text (Ctrl + Shift + V on Windows), this plain text format will be pasted.
