@@ -10,11 +10,6 @@ chrome.tabs.query(
     const htmlLink = `<a href="${url}">${title}</a>`;
     const plainLink = `"${title}" ${url}`;
 
-    const app = document.querySelector<HTMLDivElement>("#app")!;
-    app.innerHTML = `
-      Copied ${htmlLink}
-    `;
-
     navigator.clipboard.write([
       new ClipboardItem({
         "text/plain": new Blob([plainLink], { type: "text/plain" }),
