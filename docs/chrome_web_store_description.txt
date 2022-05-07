@@ -1,5 +1,3 @@
-Copy the page title and URL as rich text.
-
 Useful for pasting links to Slack, Google Docs, etc.
 
 ## Usage
