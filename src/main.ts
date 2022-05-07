@@ -7,15 +7,18 @@ chrome.tabs.query(
   },
   (tabs) => {
     const { title, url } = tabs[0];
+    const htmlLink = `<a href="${url}">${title}</a>`;
+    const plainLink = `"${title}" ${url}`;
+
     const app = document.querySelector<HTMLDivElement>("#app")!;
-    const html = `<a href="${url}">${title}</a>`;
     app.innerHTML = `
-      Copied ${html}
+      Copied ${htmlLink}
     `;
+
     navigator.clipboard.write([
       new ClipboardItem({
-        "text/plain": new Blob([title || ""], { type: "text/plain" }),
-        "text/html": new Blob([html], { type: "text/html" }),
+        "text/plain": new Blob([plainLink], { type: "text/plain" }),
+        "text/html": new Blob([htmlLink], { type: "text/html" }),
       }),
     ]);
   }
