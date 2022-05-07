@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+set -euo pipefail
+
+width=$1
+height=${width}
+
+mkdir -p images
+convert \
+  -gravity center \
+  -font Helvetica \
+  -pointsize "$((width / 4 * 3))" \
+  -background "#36393F" \
+  -fill "#FFFFFF" \
+  -size "${width}x${height}" \
+  label:c \
+  "images/icon${width}.png"
