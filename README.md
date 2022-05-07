@@ -10,6 +10,12 @@ Useful for pasting links to Slack, Google Docs, etc.
 
 ## Usage
 
+### Install
+
+Install from [Chrome Web Store](https://chrome.google.com/webstore/detail/copy-rich-link/hikiamlgpdcabppakpmemaofmkgknpea).
+
+### Copy
+
 Click the extension icon or execute the keyboard shortcut to copy the link to the page as rich text.
 
 ### Keyboard shortcut
