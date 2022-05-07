@@ -8,6 +8,6 @@ Click the extension icon or execute the keyboard shortcut to copy the link to th
 
 ### Keyboard shortcut
 
-The default keyboard shortcut is `Ctrl + Shift + L`, and `Command + Shift + L` on Mac.
+The default keyboard shortcut is <kbd>Ctrl + Shift + L</kbd>, and <kbd>Command + Shift + L</kbd> on Mac.
 
 This can be changed from the browser's extension settings.
