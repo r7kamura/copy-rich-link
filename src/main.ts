@@ -22,5 +22,5 @@ chrome.tabs.query(
       html: `<a href="${url}">${title}</a>`,
       plain: `"${title}" ${url}`,
     });
-  }
+  },
 );
