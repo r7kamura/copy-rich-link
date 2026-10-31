@@ -1,7 +1,7 @@
 {
   "private": true,
   "engines": {
-    "node": "18"
+    "node": ">=20"
   },
   "scripts": {
     "dev": "vite",
@@ -10,10 +10,10 @@
     "lint": "prettier --write ."
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^1.0.3",
-    "@types/chrome": "^0.0.184",
-    "prettier": "^2.6.2",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.7"
+    "@crxjs/vite-plugin": "^3.0.0",
+    "@types/chrome": "^0.3.7",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
   }
 }
