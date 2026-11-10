@@ -6,26 +6,16 @@ workflows:
     '.github/workflows/bump-request.yml':
         - 'actions/checkout@v7.0.1'
         - 'r7kamura/bump-request@v0.7.1'
-    '.github/workflows/ci.yml':
-        - 'actions/checkout@v5.1.0'
-        - 'actions/setup-node@v5.0.0'
     '.github/workflows/release.yml': []
+    '.github/workflows/test.yml':
+        - 'actions/checkout@v7.0.1'
+        - 'actions/setup-node@v7.1.0'
 dependencies:
-    'actions/checkout@v5.1.0':
-        ref: 'v5.1.0'
-        commit: 'sha1-fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09'
-        owner_id: 44036562
-        repo_id: 197814629
     'actions/checkout@v7.0.1':
         ref: 'v7.0.1'
         commit: 'sha1-3d3c42e5aac5ba805825da76410c181273ba90b1'
         owner_id: 44036562
         repo_id: 197814629
-    'actions/setup-node@v5.0.0':
-        ref: 'v5.0.0'
-        commit: 'sha1-a0853c24544627f65ddf259abe73b1d18a591444'
-        owner_id: 44036562
-        repo_id: 189476904
     'actions/setup-node@v7.1.0':
         ref: 'v7.1.0'
         commit: 'sha1-949feb2413d6458794dcd2491c4babbbce0c15c1'
